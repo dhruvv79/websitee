@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming web</title>
+    <link rel="stylesheet" href="../vs code/assets/css/web.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="assets/images/logox.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="https://www.xbox.com/en-IN/accessories?xr=shellnav#controllers">Game Controllers</a></li>
+                    <li><a href="https://www.xbox.com/en-IN/games/all-games?xr=shellnav">Games</a></li>
+                    <li><a href="https://www.xbox.com/en-IN/accessories?xr=shellnav#headsets">Headsets</a></li>
+                    <li><a href="https://support.xbox.com/en-US/">Support</a></li>
+                </ul>
+            </nav>
+            <img src=" images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>XBOX SERIES X<br></h2>
+                <h3>Only for True Gamers</h3>
+                <h4>$750</h4>
+                <button type="button">Buy Now <img src="assets/images/WhatsApp Image 2023-01-28 at 8.14.18 PM.jpeg"></button>
+            </div>
+            <div class="col-2">
+                <img src="assets/images/xbox.png" class="console">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="assets/images/free-arrow-down-icon-3101-thumb.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-link">
+            <img src="../vs code/assets/images/Facebook_Logo_(2019).png.webp">
+            <img src="../vs code/assets/images/twt.jpg">
+            <img src="../vs code/assets/images/inss.jpg">
+        </div>
+
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if( menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+
+</body>
+</html>
